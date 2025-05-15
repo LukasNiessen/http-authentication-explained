@@ -16,7 +16,7 @@ As you see, we set the HTTP header _Authorization_ to the string `username:passw
 
 This is obviously insecure, even with HTTPS. If an attacker manages to 'crack' just one request, you're done.
 
-Still, we need HTTPS when using Basic Authentication (eg. to protect against eaves dropping attacks).
+Still, we need HTTPS when using Basic Authentication (eg. to protect against eaves dropping attacks). Small note: Basic Auth is also vulnerable to CSRF since the browser caches the credentials and sends them along subsequent requests automatically.
 
 ## Bearer Authentication
 
